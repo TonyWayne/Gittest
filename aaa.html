@@ -1,0 +1,62 @@
+<html>
+	<head>
+	
+	
+	
+	</head>
+	<body>
+	
+		<form action="" method="get" onsubmit="demo()" id="login">
+			<h1> 登录</h1>
+		
+			<a href="javascript:t3()"> 没有账号，点击注册</a>
+		</form>
+		
+		<form action="" method="get" id="regs" style="display:none">
+			<h1> 注册</h1>
+		<a href="javascript:t4()"> 点击登录</a>
+		
+		</form>
+		<input type="button" value="点击出现" onclick="t3()">
+		<input type="button" value="隐藏" onclick="t4()">
+		
+		
+		
+		<div id="kk" style="background:red;">
+			<p id="bb">dffds</p>
+		
+		</div>
+		
+		<input type="button" value="测试" onclick="t6()">
+		
+		
+		<script>
+		function t6(){
+				for(var i=0;i<=5;i++){
+				document.getElementById("kk").append("<h1>aaaaa</h1>");
+				}
+			
+			}
+			function t5(x){
+				var a=Math.round(Math.random()*100); 
+				var b=Math.round(Math.random()*100); 
+				x.style="position:absolute;left:"+a+"px;top:"+b+"px";
+			
+			}
+		
+			function t3(){
+				document.getElementById("regs").style.display="block";
+				document.getElementById("login").style.display="none";
+			}
+			function t4(){
+				document.getElementById("regs").style.display="none";
+				document.getElementById("login").style.display="block";
+			}
+
+		</script>
+	
+	
+	</body>
+
+
+</html>
